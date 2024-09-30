@@ -4,8 +4,9 @@ import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({
-   title, imageSrc, description, skills, demo, source ,
-}) => {
+  project:{title, imageSrc, description, skills, demo, source} ,
+}) => { 
+ 
   return (
     <div className={styles.container}>
       <img
