@@ -3,7 +3,10 @@ import {getImageUrl} from "../../utils"
 import skills from "../../data/skills.json"
 import history from"../../data/history.json"
 import styles from "./Experience.module.css";
+import { useTranslation } from 'react-i18next';
  const Experience = () => {
+  const {t} =useTranslation();
+  
   return (
     <section className={styles.container} id="experience">
       <h2 className={styles.title}>Experience</h2>
